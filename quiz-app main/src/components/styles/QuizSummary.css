@@ -1,0 +1,120 @@
+.quiz-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 2.5rem auto;
+}
+
+.quiz-summary-container h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.score {
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.results {
+  width: 100%;
+}
+
+.question-result {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 1rem;
+}
+
+.question-result h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.1rem;
+  color: #495057;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.option.correct {
+  border-color: #28a745;
+  background-color: #e6f4ea;
+}
+
+.option.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.option.correct-answer {
+  border-color: #28a745;
+  background-color: #e6f4ea;
+}
+
+.feedback {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+
+.feedback.correct {
+  color: #28a745;
+}
+
+.feedback.incorrect {
+  color: #dc3545;
+}
+
+.restart-quiz-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.restart-quiz-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.3);
+}
+
+.restart-quiz-button:active {
+  background-color: #1f618d;
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+}
